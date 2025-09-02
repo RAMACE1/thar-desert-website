@@ -9,8 +9,8 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  color: #222;
-  background: #fefcf8;
+  color: #6E4B1A;   /* Dark brown text for contrast */
+  background: #FFF2D4; /* Soft warm background color */
   overflow-x: hidden;
 }
 
@@ -93,22 +93,18 @@ body {
 /* Hero */
 .hero {
   height: 100vh;
-  background: url('image.jpg') center/cover no-repeat;
+  background: #FFF2D4; /* Changed from image to solid background */
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fefcf8;
+  color: #6E4B1A;
   padding: 0 20px;
 }
 
 .hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  z-index: 0;
+  content: none; /* Removed overlay */
 }
 
 .hero-content {
@@ -122,7 +118,7 @@ body {
   font-size: 3.8rem;
   font-weight: 400;
   margin-bottom: 20px;
-  text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
+  /* Removed text-shadow for cleaner look on colored background */
 }
 
 .hero-subtitle,
@@ -130,7 +126,6 @@ body {
 .hero-cta {
   font-size: 1.3rem;
   margin-bottom: 20px;
-  text-shadow: 1.5px 1.5px 8px rgba(0,0,0,0.7);
 }
 
 .hero-subtitle em {
@@ -162,7 +157,7 @@ body {
   transform: translateX(-50%);
   text-align: center;
   font-weight: 800;
-  color: #fefcf8;
+  color: #6E4B1A;
   font-size: 12px;
   letter-spacing: 3px;
   opacity: 0.8;
@@ -388,15 +383,12 @@ body {
   .nav-menu {
     display: none;
   }
-
   .hamburger {
     display: flex;
   }
-
   .hero-content h1 {
     font-size: 2.4rem;
   }
-
   .experience-grid,
   .testimonial-grid {
     grid-template-columns: 1fr;
