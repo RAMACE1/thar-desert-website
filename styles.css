@@ -402,3 +402,17 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.hero {
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(255, 242, 212, 0.97), rgba(255, 242, 212, 0.97)), /* slight tint overlay */
+    url('image.jpg') center/cover no-repeat; /* put your picture filename, or use a full URL */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #6E4B1A;
+  padding: 0 20px;
+}
+
