@@ -578,3 +578,13 @@ console.log('%cDiscover authentic India in our traditional desert village', 'col
 // Export functions for global access
 window.scrollToSection = scrollToSection;
 window.closeImageViewer = closeImageViewer;
+function openCategory(evt, categoryName) {
+  const tabContents = document.querySelectorAll('.tab-content');
+  tabContents.forEach(tc => tc.classList.remove('active'));
+
+  const tabLinks = document.querySelectorAll('.tab-link');
+  tabLinks.forEach(tl => tl.classList.remove('active'));
+
+  document.getElementById(categoryName).classList.add('active');
+  evt.currentTarget.classList.add('active');
+}
