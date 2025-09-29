@@ -23,7 +23,7 @@ function initializeWebsite() {
         dateInput.min = today;
     }
     
-    console.log('Thar Desert Village website initialized successfully');
+    console.log('TharNest website initialized successfully');
 }
 
 // Setup Navigation Buttons
