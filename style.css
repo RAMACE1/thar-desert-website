@@ -1748,3 +1748,35 @@ html {
     transform: rotate(360deg);
   }
 }
+.tabs {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.tab-link {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background: #ccc;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.tab-link.active {
+  background: #217276;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 20px;
+}
+.tab-content.active {
+  display: block;
+}
+.tab-content img, .tab-content video {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  max-width: 320px;
+  height: auto;
+}
