@@ -856,6 +856,7 @@ body {
 
 .hero-bg {
   position: absolute;
+  background-image: url('images/your-new-image.jpg')
   top: 0;
   left: 0;
   width: 100%;
